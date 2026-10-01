@@ -34,3 +34,14 @@ input {
   border-radius: 5px;
   margin-left: 10px;
 }
+
+.servicos {
+  padding: 20px;
+}
+
+.mapa {
+  width: 50%;
+  height: 400px;
+  border: 1px solid #dddddd;
+  align-items: center;
+}

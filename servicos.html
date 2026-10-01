@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>ServiGo</title>
+  <link rel="stylesheet" href="style.css"> <!--para ligar 
+  o index ao style (pagina onde está salvo o css)-->
+</head>
+
+<body>
+  <header>
+  <a class="logo" href="index.html">
+  <img src="images/logo.png" alt="Logo ServiGo">
+  </a>
+
+  <form>
+    <input type="text" placeholder="Pesquisar serviços">
+  </form>
+
+  <div>
+    <a class="botao" href="servicos.html">Serviços</a>
+    <a class="botao" href="">Login</a>
+    <a class="botao" href="">Publicar anúncio</a>
+  </div>
+</header>
+
+  <main>
+    <section>
+      <h1>Onde a ServiGo está disponível?</h1>
+    </section>
+
+    <main class="servicos">
+  <h2>Serviços por localização</h2>
+
+  <p>Escolhe uma localidade para ver no mapa:</p>
+
+  <ul>
+    <li><a target="mapa" href="https://www.openstreetmap.org/export/embed.html?bbox=-8.65%2C41.10%2C-8.57%2C41.15&layer=mapnik&marker=41.1239%2C-8.6118">Vila Nova de Gaia</a></li>
+    <li><a target="mapa" href="https://www.openstreetmap.org/export/embed.html?bbox=-8.66%2C41.13%2C-8.58%2C41.17&layer=mapnik&marker=41.1496%2C-8.6109">Porto</a></li>
+    <li><a target="mapa" href="https://www.openstreetmap.org/export/embed.html?bbox=-8.73%2C41.16%2C-8.65%2C41.20&layer=mapnik&marker=41.1821%2C-8.6891">Matosinhos</a></li>
+    <li><a target="mapa" href="https://www.openstreetmap.org/export/embed.html?bbox=-8.59%2C40.90%2C-8.51%2C40.95&layer=mapnik&marker=40.9267%2C-8.5477">Santa Maria da Feira</a></li>
+  </ul>
+
+  <iframe
+    name="mapa"
+    class="mapa"
+    title="Mapa de serviços por localização"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-8.65%2C41.10%2C-8.57%2C41.15&layer=mapnik&marker=41.1239%2C-8.6118">
+  </iframe>
+</main>
+
+  <footer>
+    <p>2026 ServiGo</p>
+    <a href="">Sobre nós</a>
+  </footer>
+</body>
+</html>
