@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  margin: 0;
+}
+
+a {
+  color: #0f766e;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.logo {
+  border: 2px dashed gray;
+  padding: 10px 30px;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+}
+
+.botao {
+  background: #0f766e;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
