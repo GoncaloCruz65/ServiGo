@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Publicar anúncio - ServiGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <a class="logo" href="index.html">
+            <img src="images/logo.png" alt="Logo ServiGo">
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">Login</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Publicar anúncio</h1>
+
+            <p>
+                Preenche os dados do serviço que precisas
+                e encontra profissionais disponíveis.
+            </p>
+        </section>
+
+        <section>
+
+            <form>
+
+                <label for="titulo">Título do serviço</label>
+                <input type="text" id="titulo" name="titulo">
+
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" name="descricao"></textarea>
+
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleciona uma categoria</option>
+                    <option value="jardinagem">Jardinagem</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="reparacoes">Reparações</option>
+                    <option value="pintura">Pintura</option>
+                </select>
+
+                <label for="localizacao">Localização</label>
+                <input type="text" id="localizacao" name="localizacao">
+
+                <button type="submit">Publicar anúncio</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ServiGo</p>
+    </footer>
+
+</body>
+
+</html>
