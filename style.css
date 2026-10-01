@@ -17,9 +17,9 @@ header {
   border-bottom: 1px solid #dddddd;
 }
 
-.logo {
-  border: 2px dashed gray;
-  padding: 10px 30px;
+.logo img{
+  width: 150px;
+  height: auto;
 }
 
 input {
