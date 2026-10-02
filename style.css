@@ -13,18 +13,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 40px;
   border-bottom: 1px solid #dddddd;
+  background-color: white;
 }
 
 .logo img{
   width: 150px;
   height: auto;
-}
-
-input {
-  width: 300px;
-  padding: 10px;
 }
 
 .botao {
@@ -33,6 +29,20 @@ input {
   padding: 10px 15px;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+.principal {
+    background-color: #0f766e;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .servicos {
@@ -44,4 +54,35 @@ input {
   height: 400px;
   border: 1px solid #dddddd;
   align-items: center;
+}
+
+.pesquisa input{
+  width: 300px;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.hero h1{
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero p{
+  font-size: 18px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.pesquisa-hero input{
+  display: flex;
+  justify-content: center;
+}
+
+.pesquisa-hero input{
+  width: 400px;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 30px;
 }
