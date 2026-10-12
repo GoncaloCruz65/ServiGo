@@ -2,47 +2,48 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>ServiGo</title>
-  <link rel="stylesheet" href="style.css"> <!--para ligar 
-  o index ao style (pagina onde está salvo o css)-->
+  <title>Sobre nós - ServiGo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-  <a class="logo" href="index.html">
-  <img src="images/logo.png" alt="Logo ServiGo">
-  </a>
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="Logo ServiGo">
+    </a>
 
-  <form>
-    <input type="text" placeholder="Pesquisar serviços">
-  </form>
+    <form class="pesquisa">
+      <input type="text" placeholder="Pesquisar serviços">
+    </form>
 
-  <div>
-    <a class="botao" href="servicos.html">Serviços</a>
-    <a class="botao" href="">Login</a>
-    <a class="botao" href="">Publicar anúncio</a>
-  </div>
-</header>
+    <div class="acoes">
+      <a class="botao" href="servicos.html">Serviços</a>
+      <a class="botao" href="login.html">Login</a>
+      <a class="botao principal" href="publicar_anuncio.html">Publicar anúncio</a>
+    </div>
+  </header>
 
   <main>
-    <section>
-      <h1>Onde a ServiGo está disponível?</h1>
+    <h1 class="titulo-pagina">Sobre nós</h1>
+
+    <section class="sobre">
+      <div class="sobre-texto">
+        <h2>Quem somos</h2>
+
+        <p>Somos um grupo de estudantes do ISPGaya e estamos a desenvolver o ServiGo, um projeto web para a divulgação e pesquisa de serviços online.</p>
+
+        <p>O objetivo é criar um site onde os utilizadores possam procurar serviços, consultar anúncios e publicar os seus próprios anúncios, de forma simples e intuitiva.</p>
+
+        <p>O projeto está a ser desenvolvido em HTML e CSS, e o trabalho é feito em equipa através do GitHub, usando branches e Pull Requests.</p>
+      </div>
+
+      <img src="images/sobre.jpg" alt="Equipa ServiGo">
     </section>
-
-    <main class="servicos">
-  <h2>Serviços por localização</h2>
-
-  <p>Somos um grupo de estudantes do ISPGaya e estamos a desenvolver o ServiGo, um projeto web para a divulgação e pesquisa de serviços online.
-
-O objetivo é criar um site onde os utilizadores possam procurar serviços, consultar anúncios e publicar os seus próprios anúncios, de forma simples e intuitiva.
-
-O projeto está a ser desenvolvido em HTML e CSS, e o trabalho é feito em equipa através do GitHub, usando branches e Pull Requests.</p>
-
-</main>
+  </main>
 
   <footer>
     <p>2026 ServiGo</p>
-    <a href="">Sobre nós</a>
+    <a href="sobreNos.html">Sobre nós</a>
   </footer>
 </body>
 </html>
