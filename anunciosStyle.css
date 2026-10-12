@@ -1,0 +1,35 @@
+.servicos-destaque {
+  padding: 20px;
+}
+
+.grelha {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.cartao {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.cartao h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.profissional {
+  font-weight: bold;
+}
+
+.local {
+  color: gray;
+}
+
+.preco {
+  color: green;
+  font-weight: bold;
+}

@@ -64,20 +64,31 @@ header {
   font-size: 15px;
 }
 
+.hero {
+  background-image: url("images/fundo.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  box-sizing: border-box;
+  padding-top: 170px;
+}
+
 .hero h1{
   font-size: 48px;
   text-align: center;
+  color: white;
 }
 
 .hero p{
   font-size: 18px;
-  color: #6b7280;
+  color: white;
   text-align: center;
 }
 
-.pesquisa-hero input{
+.pesquisa-hero {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
 .pesquisa-hero input{
