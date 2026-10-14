@@ -13,10 +13,6 @@
   <img src="images/logo.png" alt="Logo ServiGo">
   </a>
 
-  <form>
-    <input type="text" placeholder="Pesquisar serviços">
-  </form>
-
   <div>
     <a class="botao" href="servicos.html">Serviços</a>
     <a class="botao" href="">Login</a>
@@ -28,12 +24,26 @@
     <section>
       <h1>Faça o seu login!!!</h1>
     </section>
-      <form>
-    <input type="text" placeholder="Nome de utilizador:">
+
+      <form action="login.html" method="post">
+    <input type="email"
+            name="email"
+            placeholder="Email:"
+            required>  
+          
+    <input type="password"
+            name="palavra_passe"
+            placeholder="Palavra-passe:"
+            required>
+
+            <button type="submit">Iniciar sessão</button>
   </form>
-    <form>
-    <input type="text" placeholder="Palavra-passe:">
-  </form>
+
+   <p>
+        Ainda não tens conta?
+        <a href="registo.html">Criar conta</a>
+    </p>
+      
 </main>
 
   <footer>
