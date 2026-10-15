@@ -155,9 +155,45 @@ header {
 }
 
 .home {
-  background-image: url("images/fundo.png");
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
   padding: 100px 20px;
   text-align: center;
 }
+
+/* mancha da esquerda */
+.home::before {
+  content: "";
+  position: absolute;
+  left: -120px;
+  top: 60px;
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(135deg, #2c5a3f, #5fa98a);
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+/* mancha da direita */
+.home::after {
+  content: "";
+  position: absolute;
+  right: -100px;
+  top: -60px;
+  width: 420px;
+  height: 320px;
+  background: linear-gradient(135deg, #3f8a6a, #8fd1b8);
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+/* o texto e os botões ficam por cima das manchas */
+.home > * {
+  position: relative;
+  z-index: 1;
+}
+
+.acoes-hero {
+  justify-content: center;
+  margin-top: 30px;
+}
+
