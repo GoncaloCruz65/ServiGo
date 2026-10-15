@@ -65,12 +65,13 @@ header {
 }
 
 .hero {
-  background-image: url("images/fundo.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  box-sizing: border-box;
-  padding-top: 170px;
+  text-align: center;
+  font-size: 48px;
+  color: #2c5a3f;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1{
@@ -96,4 +97,20 @@ header {
   padding: 12px 15px;
   border: 1px solid #d1d5db;
   border-radius: 30px;
+}
+.categorias {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.categorias a {
+  text-decoration: none;
+  color: #2c5a3f;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.categorias a.ativa {
+  border-bottom: 3px solid #2c5a3f;
 }
