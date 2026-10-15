@@ -2,53 +2,79 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>ServiGo</title>
-  <link rel="stylesheet" href="style.css"> <!--para ligar 
-  o index ao style (pagina onde está salvo o css)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sessão | ServiGo</title>
+  <link rel="stylesheet" href="loginstyle.css">
 </head>
-
+ 
 <body>
-  <header>
-  <a class="logo" href="index.html">
-  <img src="images/logo.png" alt="Logo ServiGo">
-  </a>
-
-  <div>
-    <a class="botao" href="servicos.html">Serviços</a>
-    <a class="botao" href="login.html">Login</a>
-    <a class="botao" href="publicar_anuncio.html">Publicar anúncio</a>
-  </div>
-</header>
-
-  <main>
-    <section>
-      <h1>Faça o seu login!!!</h1>
-    </section>
-
-      <form action="login.html" method="post">
-    <input type="email"
-            name="email"
-            placeholder="Email:"
-            required>  
-          
-    <input type="password"
-            name="palavra_passe"
-            placeholder="Palavra-passe:"
-            required>
-
-            <button type="submit">Iniciar sessão</button>
-  </form>
-
-   <p>
-        Ainda não tens conta?
-        <a href="registo.html">Criar conta</a>
-    </p>
-      
-</main>
-
-  <footer>
-    <p>2026 ServiGo</p>
-    <a href="">Sobre nós</a>
-  </footer>
+ 
+  <!-- Retângulo central de login -->
+  <main class="login-caixa">
+    <a class="logo" href="index.html">
+      <img src="images/logo.png" alt="ServiGo">
+    </a>
+ 
+    <h1>Damos-lhe as boas-vindas</h1>
+ 
+    <form id="formLogin" novalidate>
+      <div class="campo" id="campoEmail">
+        <label for="email">Endereço de e-mail*</label>
+        <input type="email" id="email" placeholder="Introduza o seu e-mail" autocomplete="email">
+        <small class="erro">É obrigatório um endereço de e-mail.</small>
+      </div>
+ 
+      <div class="campo" id="campoPassword">
+        <label for="password">Palavra-passe*</label>
+        <div class="campo-password">
+          <input type="password" id="password" placeholder="Introduza uma palavra-passe" autocomplete="current-password">
+          <button type="button" class="olho" id="verPassword" aria-label="Mostrar palavra-passe">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </button>
+        </div>
+        <small class="erro">É obrigatória uma palavra-passe.</small>
+      </div>
+ 
+      <a class="link-ajuda" href="">Precisa de ajuda com a palavra-passe?</a>
+ 
+      <button type="submit" class="botao-principal">Iniciar sessão</button>
+    </form>
+ 
+    <div class="separador"><span>OU</span></div>
+ 
+    <a class="botao-secundario" href="">Em alternativa, inscreva-se</a>
+  </main>
+ 
+  <a class="botao-ajuda" href="">? Ajuda</a>
+ 
+  <script>
+    // Mostrar / esconder palavra-passe
+    const password = document.getElementById('password');
+    document.getElementById('verPassword').addEventListener('click', function () {
+      password.type = password.type === 'password' ? 'text' : 'password';
+    });
+ 
+    // Validação simples
+    document.getElementById('formLogin').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const pares = [
+        [document.getElementById('email'), document.getElementById('campoEmail')],
+        [password, document.getElementById('campoPassword')]
+      ];
+      let valido = true;
+      pares.forEach(function (par) {
+        const vazio = par[0].value.trim() === '';
+        par[1].classList.toggle('invalido', vazio);
+        if (vazio) valido = false;
+      });
+      if (valido) {
+        alert('Login válido! (falta ligar ao servidor)');
+      }
+    });
+  </script>
 </body>
 </html>
+ 
