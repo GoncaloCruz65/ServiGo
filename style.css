@@ -78,10 +78,6 @@ header {
     width: 100%;
 }
 
-.botao:hover {
-    transform: scaleX(1.07);
-}
-
 .acoes {
     display: flex;
     align-items: center;
