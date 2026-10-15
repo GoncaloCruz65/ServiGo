@@ -153,3 +153,11 @@ header {
 .categorias a.ativa {
   border-bottom: 3px solid #2c5a3f;
 }
+
+.home {
+  background-image: url("images/fundo.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+}
