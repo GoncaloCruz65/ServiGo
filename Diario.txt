@@ -5,8 +5,5 @@ Tiago - Alterações login Página de login do ServiGo:
   os campos de e-mail e palavra-passe, o botão “Iniciar sessão” e a opção de se inscrever. 
 
 Gonçalo - 
-
-Edu - 
-
-
-22/10
+Edu - Alterações nos botões da página principal, alteração no visual do banner da página 
+trocando a imagem por simbolos mais simples na lateral.

@@ -30,6 +30,7 @@ if (!isset($_SESSION["id_utilizador"])) {
             <a class="botao" href="servicos.html">Serviços</a>
             <a class="botao" href="publicar_anuncio.html">Publicar anúncio</a>
             <a class="botao" href="perfil.php">Perfil</a>
+            <a class="botao" href="logout.php">Terminar sessão</a>
         </nav>
     </header>
 
