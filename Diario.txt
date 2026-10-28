@@ -1,7 +1,9 @@
 15/10 
 
 Tiago - Alterações login Página de login do ServiGo:
- melhorei o design da página, que estava o. Fiz um retângulo branco ao centro, com o logo, os campos de e-mail e palavra-passe, o botão “Iniciar sessão” e a opção de se inscrever. 
+ melhorei o design da página, que estava basico. Fiz um retângulo branco ao centro, com o logo,
+  os campos de e-mail e palavra-passe, o botão “Iniciar sessão” e a opção de se inscrever. 
+
 Gonçalo - 
 Edu - Alterações nos botões da página principal, alteração no visual do banner da página 
 trocando a imagem por simbolos mais simples na lateral.

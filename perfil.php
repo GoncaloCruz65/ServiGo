@@ -54,9 +54,9 @@ if (!isset($_SESSION["id_utilizador"])) {
 
             <p>Inicia sessão para acederes ao teu perfil.</p>
 
-            <a class="botao" href="login.html">Iniciar sessão</a>
+            <a class="botao" href="login.php">Iniciar sessão</a>
 
-            <a class="botao" href="registo.html">Criar conta</a>
+            <a class="botao" href="registo.php">Criar conta</a>
 
         <?php endif; ?>
     </main>
