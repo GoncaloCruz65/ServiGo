@@ -3,21 +3,26 @@
 $servidor = "localhost";
 $base_dados = "servigo";
 $utilizador = "root";
-$palavra_passe = "";
 
 try {
+    // 1. Tenta ligar com password vazia (Padrão do XAMPP)
     $pdo = new PDO(
         "mysql:host=$servidor;dbname=$base_dados;charset=utf8mb4",
         $utilizador,
-        $palavra_passe
+        ""
     );
-
-    $pdo->setAttribute(
-        PDO::ATTR_ERRMODE,
-        PDO::ERRMODE_EXCEPTION
-    );
-
 } catch (PDOException $e) {
-    error_log($e->getMessage());
-    exit("Não foi possível ligar à base de dados.");
+    try {
+        // 2. Se falhar, tenta ligar com password "root" (Padrão do MAMP)
+        $pdo = new PDO(
+            "mysql:host=$servidor;dbname=$base_dados;charset=utf8mb4",
+            $utilizador,
+            "root"
+        );
+    } catch (PDOException $e2) {
+        error_log($e2->getMessage());
+        exit("Não foi possível ligar à base de dados.");
+    }
 }
+
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
