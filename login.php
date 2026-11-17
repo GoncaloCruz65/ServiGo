@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     } else {
 
+    //Procura o utilizador na base de dados com base no e-mail fornecido
         $sql = "SELECT id_utilizador, nome, email, palavra_passe
                 FROM utilizadores
                 WHERE email = :email";
@@ -29,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
         $utilizadorEncontrado = $stmt->fetch(PDO::FETCH_ASSOC);
 
+        //Verifica a palavra-passe e cria sessao
         if (
             $utilizadorEncontrado &&
             password_verify(
@@ -44,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $_SESSION["nome"] =
                 $utilizadorEncontrado["nome"];
-
+ 
             header("Location: perfil.php");
             exit;
 

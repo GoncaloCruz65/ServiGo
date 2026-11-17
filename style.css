@@ -197,3 +197,58 @@ header {
   margin-top: 30px;
 }
 
+/* Adaptação da barra de navegação para telemóveis */
+@media (max-width: 768px) {
+
+    header,
+    .acoes {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+}
+
+/* Adaptação para dispositivos móveis */
+@media (max-width: 768px) {
+
+    /* Barra de navegação */
+    header {
+        flex-wrap: wrap;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .acoes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    /* Título principal */
+    .hero,
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Campo de pesquisa */
+    .pesquisa-hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pesquisa-hero input {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    /* Categorias */
+    .categorias {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
