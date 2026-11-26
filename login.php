@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     <main class="login-caixa">
 
-        <a class="logo" href="index.html">
+        <a class="logo" href="index.php">
             <img src="images/logo.png" alt="ServiGo">
         </a>
 

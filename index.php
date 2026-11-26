@@ -22,14 +22,14 @@ $perfis_profissionais = $stmt_perfis->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
   <header>
-  <a class="logo" href="index.html">
+  <a class="logo" href="index.php">
   <img src="images/logo.png" alt="Logo ServiGo">
   </a>
 
   <div class="acoes">
-    <a class="botao" href="servicos.html">Serviços</a>
+    <a class="botao" href="servicos.php">Serviços</a>
     <a class="botao" href="login.php">Login</a>
-    <a class="botao" href="publicar_anuncio.html">Publicar anúncio</a>
+    <a class="botao" href="publicar_anuncio.php">Publicar anúncio</a>
     <a class="botao" href="perfil.php" >Perfil</a>
   </div>
 </header>
